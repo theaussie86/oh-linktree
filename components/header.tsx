@@ -102,7 +102,7 @@ export function Header({ config }: HeaderProps) {
             </svg>
           </a>
           <a
-            href="https://onlineheldinnen.de/newsletter"
+            href="https://onlineheldinnen.de/pinterst-starter-freebie/"
             className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 backdrop-blur-sm"
             aria-label="Newsletter"
           >
