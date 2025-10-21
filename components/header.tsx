@@ -75,7 +75,7 @@ export function Header({ config }: HeaderProps) {
             </svg>
           </a>
           <a
-            href="https://instagram.com/onlineheldinnen"
+            href="https://www.instagram.com/leise.digitalfrei"
             className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 backdrop-blur-sm"
             aria-label="Instagram"
           >
@@ -88,16 +88,17 @@ export function Header({ config }: HeaderProps) {
             </svg>
           </a>
           <a
-            href="https://facebook.com/onlineheldinnen"
+            href="https://de.pinterest.com/OnlineGeldheldinnen/"
             className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition-all duration-300 backdrop-blur-sm"
-            aria-label="Facebook"
+            aria-label="Pinterest"
           >
             <svg
               className="w-6 h-6 text-white"
               fill="currentColor"
-              viewBox="0 0 24 24"
+              viewBox="-271 273 256 256"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              <path d="M-143,273c-70.7,0-128,57.3-128,128c0,52.4,31.5,97.4,76.6,117.2c-0.4-8.9-0.1-19.7,2.2-29.4c2.5-10.4,16.5-69.7,16.5-69.7 s-4.1-8.2-4.1-20.2c0-19,11-33.1,24.7-33.1c11.6,0,17.3,8.7,17.3,19.2c0,11.7-7.5,29.2-11.3,45.4c-3.2,13.6,6.8,24.6,20.2,24.6 c24.3,0,40.6-31.1,40.6-68c0-28-18.9-49-53.3-49c-38.8,0-63,28.9-63,61.3c0,11.2,3.3,19,8.4,25.1c2.4,2.8,2.7,3.9,1.8,7.1 c-0.6,2.3-2,8-2.6,10.3c-0.9,3.2-3.5,4.4-6.4,3.2c-17.9-7.3-26.2-26.9-26.2-48.9c0-36.4,30.7-80,91.5-80c48.9,0,81,35.4,81,73.3 c0,50.2-27.9,87.7-69.1,87.7c-13.8,0-26.8-7.5-31.3-15.9c0,0-7.4,29.5-9,35.2c-2.7,9.9-8,19.7-12.9,27.4c11.5,3.4,23.7,5.3,36.3,5.3 c70.7,0,128-57.3,128-128C-15,330.3-72.3,273-143,273z" />
             </svg>
           </a>
           <a
