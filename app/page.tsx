@@ -6,7 +6,7 @@ export default function Home() {
   const links = getActiveLinks();
 
   return (
-    <div className="min-h-screen bg-brand-bg">
+    <div className="min-h-screen">
       {/* Skip to main content link for accessibility */}
       <a
         href="#main-content"
@@ -19,7 +19,7 @@ export default function Home() {
 
       <main
         id="main-content"
-        className="container mx-auto px-4 sm:px-6 py-8 sm:py-12"
+        className="container mx-auto px-4 sm:px-6 py-8 sm:py-12 bg-brand-bg"
       >
         <div className="max-w-2xl mx-auto space-y-4">
           {links.map((link) => (
