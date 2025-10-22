@@ -1,20 +1,21 @@
-import { LinkItem, LinkCategory, HeaderConfig, PageMetadata } from './types';
+import { LinkItem, LinkCategory, HeaderConfig, PageMetadata } from "./types";
 
 /**
  * Page metadata configuration
  */
 export const pageMetadata: PageMetadata = {
-  title: 'Online Heldinnen | Links',
-  description: 'Alle wichtigen Links zu Online Heldinnen - Social Media, Website, Ressourcen und mehr',
-  keywords: ['Online Heldinnen', 'Social Media', 'Frauen', 'Empowerment'],
+  title: "Online Heldinnen | Links",
+  description:
+    "Alle wichtigen Links zu Online Heldinnen - Social Media, Website, Ressourcen und mehr",
+  keywords: ["Online Heldinnen", "Social Media", "Frauen", "Empowerment"],
   ogImage: {
-    url: '/og-image.png',
+    url: "/og-image.png",
     width: 1200,
     height: 630,
-    alt: 'Online Heldinnen Logo',
+    alt: "Online Heldinnen Logo",
   },
-  locale: 'de_DE',
-  canonicalUrl: 'https://onlineheldinnen.de',
+  locale: "de_DE",
+  canonicalUrl: "https://onlineheldinnen.de",
 };
 
 /**
@@ -22,14 +23,14 @@ export const pageMetadata: PageMetadata = {
  */
 export const headerConfig: HeaderConfig = {
   logo: {
-    src: '/logo.svg',
-    alt: 'Online Heldinnen Logo',
+    src: "/logo.svg",
+    alt: "Online Heldinnen Logo",
     width: 120,
     height: 40,
   },
-  heading: 'Online Heldinnen',
-  subheading: 'Deine Community für digitale Sichtbarkeit',
-  backgroundColor: '#f2f3fa',
+  heading: "Online Heldinnen",
+  subheading: "Deine Community für digitale Sichtbarkeit",
+  backgroundColor: "#f2f3fa",
 };
 
 /**
@@ -38,80 +39,61 @@ export const headerConfig: HeaderConfig = {
  */
 export const links: LinkItem[] = [
   {
-    id: 'main-website',
-    title: 'Zur Hauptseite',
-    url: 'https://onlineheldinnen.de',
-    description: 'Entdecke die Online Heldinnen Community',
-    icon: 'home',
+    id: "robethood-website",
+    title: "🤑 Robethood: Einmalig 500 € sichern",
+    url: "https://gksnwp.robethood.net/ts/93765/tsc?typ=r&amc=con.robethood.537825.557816.CRTM2lwrG7v",
+    description:
+      "Ohne Vorkenntnisse, ohne Risiko – so einfach kannst du dir 500 € extra verdienen.",
+    icon: "external-link",
     category: LinkCategory.WEBSITE,
     priority: 1,
-    openInNewTab: false,
-    isActive: true,
-  },
-  {
-    id: 'instagram',
-    title: 'Instagram',
-    url: 'https://instagram.com/onlineheldinnen',
-    description: 'Folge uns auf Instagram',
-    icon: 'instagram',
-    category: LinkCategory.SOCIAL,
-    priority: 2,
     openInNewTab: true,
     isActive: true,
   },
   {
-    id: 'facebook',
-    title: 'Facebook Community',
-    url: 'https://facebook.com/onlineheldinnen',
-    description: 'Tritt unserer Facebook-Gruppe bei',
-    icon: 'facebook',
-    category: LinkCategory.SOCIAL,
-    priority: 3,
-    openInNewTab: true,
-    isActive: true,
-  },
-  {
-    id: 'blog',
-    title: 'Blog',
-    url: 'https://onlineheldinnen.de/blog',
-    description: 'Tipps & Tricks für deine Online-Präsenz',
-    icon: 'book-open',
-    category: LinkCategory.RESOURCE,
+    id: "blog",
+    title: "Blog",
+    url: "https://onlineheldinnen.de/blog",
+    description: "Tipps & Tricks für deine Online-Präsenz",
+    icon: "home",
+    category: LinkCategory.WEBSITE,
     priority: 4,
     openInNewTab: false,
     isActive: true,
   },
   {
-    id: 'newsletter',
-    title: 'Newsletter',
-    url: 'https://onlineheldinnen.de/newsletter',
-    description: 'Bleib auf dem Laufenden',
-    icon: 'mail',
-    category: LinkCategory.CONTACT,
+    id: "pindichreich-online-kurs",
+    title: "Pin dich Reich - Online Kurs",
+    url: "https://myablefy.com/epl/gS_yDE1_YBWjuQ-2FJ71",
+    description:
+      "Kreiere Blogs und Bilder und verdiene passive Provisionen durch Klicks auf Pinterest",
+    icon: "graduation-cap",
+    category: LinkCategory.RESOURCE,
     priority: 5,
-    openInNewTab: false,
+    openInNewTab: true,
     isActive: true,
   },
   {
-    id: 'courses',
-    title: 'Online-Kurse',
-    url: 'https://onlineheldinnen.de/kurse',
-    description: 'Lerne von den Besten',
-    icon: 'graduation-cap',
-    category: LinkCategory.SHOP,
+    id: "kipinboost-online-kurs",
+    title: "KI Pin Boost - Online Kurs",
+    url: "https://myablefy.com/epl/XWvAshc2byss495YWjhY",
+    description:
+      "🎯 Mehr Reichweite in kürzerer Zeit. Weniger Aufwand. Mehr Umsatz.",
+    icon: "graduation-cap",
+    category: LinkCategory.RESOURCE,
     priority: 6,
-    openInNewTab: false,
+    openInNewTab: true,
     isActive: true,
   },
   {
-    id: 'contact',
-    title: 'Kontakt',
-    url: 'https://onlineheldinnen.de/kontakt',
-    description: 'Schreib uns eine Nachricht',
-    icon: 'message-circle',
-    category: LinkCategory.CONTACT,
+    id: "pinterst-starter-freebie",
+    title: "0 € Pinterest Starter Kit",
+    url: "https://onlineheldinnen.de/pinterst-starter-freebie/",
+    description: "Freebie für deine Pinterest-Strategie",
+    icon: "book-open",
+    category: LinkCategory.RESOURCE,
     priority: 7,
-    openInNewTab: false,
+    openInNewTab: true,
     isActive: true,
   },
 ];
@@ -121,7 +103,7 @@ export const links: LinkItem[] = [
  */
 export function getActiveLinks(): LinkItem[] {
   return links
-    .filter(link => link.isActive !== false)
+    .filter((link) => link.isActive !== false)
     .sort((a, b) => a.priority - b.priority);
 }
 
@@ -129,5 +111,5 @@ export function getActiveLinks(): LinkItem[] {
  * Helper function to get links by category
  */
 export function getLinksByCategory(category: LinkCategory): LinkItem[] {
-  return getActiveLinks().filter(link => link.category === category);
+  return getActiveLinks().filter((link) => link.category === category);
 }
