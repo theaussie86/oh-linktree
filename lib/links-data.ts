@@ -51,6 +51,17 @@ export const links: LinkItem[] = [
     isActive: true,
   },
   {
+    id: "robethood-telegram-group",
+    title: "Robethood Telegram Gruppe",
+    url: "https://t.me/+9TYkZeYOFCxjMzc6",
+    description: "Trete meiner Telegram-Gruppe bei",
+    icon: "external-link",
+    category: LinkCategory.RESOURCE,
+    priority: 2,
+    openInNewTab: true,
+    isActive: true,
+  },
+  {
     id: "blog",
     title: "Blog",
     url: "https://onlineheldinnen.de/blog",
